@@ -33,19 +33,15 @@ body {
 .main {
   background: lightgreen;
   height: 50vh;
-  display: flow-root;
-  padding:  0 15px;
+  display: flex;
+  flex-direction: row;
+
 }
 
-.group {
-  margin: 0 15px;
-  float: left;
-}
 
 .group1{
   background: violet;
   width: 250px;
-
 }
 .group2{
   background: salmon;
