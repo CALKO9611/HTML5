@@ -50,10 +50,10 @@ body {
 
 /* 로고 */
 .logo{
-  /* background-color: ; */
   position: absolute;
   top: 45px;
   left: 60px;
+  z-index: 10;
 }
 
 /* 텍스트 링크 모음 */
