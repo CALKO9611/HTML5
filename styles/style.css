@@ -342,9 +342,14 @@ body {
   padding: 4px 10px;
 }
 
+.sign li{
+  display: inline-block;
+}
+
 .sign li:first-child {
   margin-right: 16px;
 }
+
 
 .sign a{
   display: inline-block;
@@ -354,6 +359,17 @@ body {
 
 .sign a::before{
   color: orangered;
+}
+
+/* 유효성 검사 배너 */
+.validation-list{
+  background-color: yellow;
+  margin-top: 25px;
+}
+
+.validation-list li {
+  background-color: pink;
+  margin-top: 10px;
 }
 
 /* 슬로건 */
