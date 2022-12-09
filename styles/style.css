@@ -340,21 +340,19 @@ body {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   padding: 4px 10px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+}
+
+.sign li:first-child {
+  margin-right: 16px;
 }
 
 .sign a{
-  display: block;
+  display: inline-block;
   padding: 6px 0;
   letter-spacing: -1px;
 }
 
 .sign a::before{
-  content: '\e804';
-  font-family: fontello;
-  margin-right: 8px;
   color: orangered;
 }
 
