@@ -443,7 +443,6 @@ body {
   border: 1px solid #aaa;
   border-radius: 15px 15px 0 0;
   padding: 15px 25px 10px;
-  width: 300px;
 }
 
 .search-form-inner{
@@ -460,7 +459,6 @@ body {
 }
 
 .form-group-label{
-  /* white-space: nowrap; */
   flex-shrink: 0;
   margin-right: 10px;
 }
@@ -476,7 +474,6 @@ body {
 }
 
 .search-button{
-  /* white-space: nowrap; */
   flex-shrink: 0;
   background-color: #000;
   color: #fff;
