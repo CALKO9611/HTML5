@@ -1,6 +1,7 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./module.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend {
@@ -566,7 +567,6 @@ body {
 }
 
 .news-title{
-  color: #e85e2c;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -613,6 +613,14 @@ body {
   padding: 8px;
 }
 
+/* 신규 이벤트 및 관련 사이트 */
+/* .gradient-effect{
+
+}
+
+.accent-color{
+  color: #e85e2c;
+} */
 
 /* 슬로건 */
 .slogan {
