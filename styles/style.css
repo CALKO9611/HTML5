@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 10px;
+}
+
 /* 링크 스타일 */
 a{
   color: inherit;
@@ -16,6 +20,7 @@ a{
 /* 본문 스타일 */
 body {
   color: #212121;
+  font-size: 1.4rem;
   background: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -30,7 +35,6 @@ body {
 .header {
   background: #fff;
   padding: 0 30px;
-  height: 15vh;
   border-radius: 0 0 15px 15px;
 }
 
@@ -42,28 +46,6 @@ body {
 }
 
 
-/* 겹침 Cascading */
-/* 우선순위 규칙 */
-/* li (Type Selector) - 1점 */
-/* .first (Class Selector) - 10점 */
-/* #item (ID Selector) - 100점 */
-
-/* .member -> 10점, li -> 1점, ::before -> 1점 => 12점 */
-/* .member li::before{
-  content: ":";
-} */
-/* .member -> 10점, .firstr -> 10점, ::before -> 1점 => 21점 */
-/* .member .first::before{
-  content: "첫번째 자식요소를 생성합니다.";
-} */
-/* .member li:first-child(2)::before{
-  content: "";
-} */
-
-/* .member li:nth-child(n+2)::before{
-  content: ":";
-  background-color: skyblue;
-} */
 
 .member li::before {
   content: "\e800";
@@ -76,45 +58,90 @@ body {
 
 /* 비주얼 */
 .visual {
-  background: orange;
-  height: 10vh;
+  height: 120px;
 }
 /* 메인 */
 .main {
-  background: lightgreen;
+  background: #fff;
   min-height: 450px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 30px;
+  display: flow-root;
+  padding: 30px 15px;
 }
 
-.group1{
-  background: violet;
+.group {
+  float: left;
+  margin: 0 15px;
+}
+
+.group1 {
   width: 250px;
 }
-.group2{
-  background: salmon;
+
+.group2 {
   width: 380px;
 }
-.group3{
-  background: gold;
+.group3 {
   width: 190px;
+}
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-effect{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.text-xl{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.accent-color{
+  color: #a52a2a;
+}
+
+.margin-top-default{
+  margin-top: 20px;
+}
+
+.event-button-wrapper{
+  background-color: yellow;
+}
+
+.event-button{
+  width: 19px;
+  border: 0;
+  padding: 20px 0 0 0;
+  background: aqua url("./images/back_forward.png") no-repeat; 
+}
+
+.event-button-next{
+  background-position: -36px 0;
+}
+
+.event-thumbnail,
+.event-brief{
+  margin: 10px 0;
+}
+
+.event-thumbnail img{
+  border: 1px solid #aaa;
+  box-shadow:5px 5px 0 0 #ccc ;
+}
+
+/* 인기 사이트 */
+.favorite{
 }
 
 /* 슬로건 */
 .slogan {
   background: skyblue;
-  height: 10vh;
   clear: both;
-
 }
 /* 푸터 */
 .footer {
   background: gray;
 }
-.footer-inner{
+.footer-inner {
   background: silver;
-  height: 15vh;
 }
