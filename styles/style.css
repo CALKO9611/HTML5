@@ -710,6 +710,14 @@ body {
 .favorite-list li{
   margin-top: 10px;
   counter-increment: number;
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.favorite-list a{
+  background-color: aqua;
 }
 
 .favorite-list li::before{
@@ -731,8 +739,18 @@ body {
   display: inline-block;
   width: 20px;
   height: 11px;
-  background-color: pink;
+  margin-left: auto;
+  background: lime url("./images/rank.png") no-repeat 100% 0;
 }
+
+.stop{
+  background-position: 100% 48%;
+}
+
+.down{
+  background-position: 100% 100%;
+}
+
 
 .favorite-more{
   position: absolute;
